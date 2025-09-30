@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CEEP Escola de Idiomas</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-blog.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="imagens/logo.png" alt="Logo [SEU NEGÓCIO]"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section do Blog -->
+        <section class="blog-hero">
+            <div class="hero-content">
+                <h1>Nosso Blog</h1>
+                <p>Fique por dentro das novidades, dicas e tendências do nosso setor</p>
+            </div>
+        </section>
+
+        <!-- Barra de Pesquisa e Filtros -->
+        <section class="blog-controles">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Pesquisar artigos..." class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <div class="filtros-blog">
+                <button class="filtro-blog ativo" data-categoria="todas">Todas</button>
+                <button class="filtro-blog" data-categoria="dicas">Dicas</button>
+                <button class="filtro-blog" data-categoria="novidades">Novidades</button>
+                <button class="filtro-blog" data-categoria="tutoriais">Tutoriais</button>
+            </div>
+        </section>
+
+        <!-- Grade de Artigos -->
+        <section class="blog-grid">
+            <!-- Artigo em Destaque -->
+            <article class="artigo-destaque" data-categoria="dicas">
+                <div class="artigo-imagem">
+                    <img src="imagens/blog1.jpg" alt="[TÍTULO ARTIGO 1]">
+                    <span class="artigo-tag">Em Destaque</span>
+                </div>
+                <div class="artigo-conteudo">
+                    <div class="artigo-meta">
+                        <span class="categoria">Dicas</span>
+                        <span class="data">15 Nov 2025</span>
+                        <span class="tempo-leitura">5 min</span>
+                    </div>
+                    <h2>Como treinar sua escrita em Inglês</h2>
+                    <p>Para melhorar sua escrita em inglês, pratique diariamente com pequenos textos, como um diário ou
+                        mensagens simples. Reescreva notícias ou músicas com suas próprias palavras, simule e-mails
+                        formais e estabeleça metas semanais. Além disso, utilize ferramentas de correção online e,
+                        sempre que possível, peça feedback de professores ou colegas para evoluir mais rápido.</p>
+                    <div class="artigo-autor">
+                        <img src="imagens/autor.jpg" alt="Autor">
+                        <div>
+                            <span class="autor-nome">Julia Mascarenha</span>
+                            <span class="autor-cargo">Professora de Inglês</span>
+                        </div>
+                    </div>
+                    <button class="btn-ler-mais">Ler Mais</button>
+                </div>
+            </article>
+
+            <!-- Container dos Artigos Normais -->
+            <div class="artigos-container">
+                <!-- Artigo 2 -->
+                <article class="artigo-card" data-categoria="novidades">
+                    <div class="artigo-imagem">
+                        <img src="imagens/blog2.jpg" alt="[TÍTULO ARTIGO 2]">
+                    </div>
+                    <div class="artigo-conteudo">
+                        <div class="artigo-meta">
+                            <span class="categoria">Novidades</span>
+                            <span class="data">10 Nov 2025</span>
+                            <span class="tempo-leitura">3 min</span>
+                        </div>
+                        <h3>Novidades no Curso de Inglês</h3>
+                        <p>Estamos lançando novas turmas de conversação em inglês, espanhol e alemão, com foco em
+                            situações do dia a dia e prática intensiva. Além disso, a escola agora oferece um
+                            laboratório de escrita online com correção personalizada e atividades interativas. Os alunos
+                            também poderão participar de clubes culturais mensais para treinar o idioma em contextos
+                            reais e dinâmicos.</p>
+                        <button class="btn-ler-mais">Ler Mais</button>
+                    </div>
+                </article>
+
+                <!-- Artigo 3 -->
+                <article class="artigo-card" data-categoria="tutoriais">
+                    <div class="artigo-imagem">
+                        <img src="imagens/blog3.jpg" alt="[TÍTULO ARTIGO 3]">
+                    </div>
+                    <div class="artigo-conteudo">
+                        <div class="artigo-meta">
+                            <span class="categoria">Tutoriais</span>
+                            <span class="data">5 Nov 2025</span>
+                            <span class="tempo-leitura">7 min</span>
+                        </div>
+                        <h3>Como solicitar o Visto de Estudante para os EUA</h3>
+                        <p>Para estudar nos Estados Unidos, o primeiro passo é ser aceito em uma escola credenciada e
+                            receber o formulário I-20. Em seguida, é necessário pagar a taxa SEVIS, preencher o
+                            formulário DS-160, pagar a taxa do visto e agendar a entrevista no consulado. No dia da
+                            entrevista, apresente passaporte válido, comprovantes financeiros e documentos acadêmicos. É
+                            recomendável iniciar o processo com antecedência de pelo menos três meses antes da viagem.
+                        </p>
+
+                        <button class="btn-ler-mais">Ler Mais</button>
+                    </div>
+                </article>
+
+                <!-- Artigo 4 -->
+                <article class="artigo-card" data-categoria="dicas">
+                    <div class="artigo-imagem">
+                        <img src="imagens/blog11.jpg" alt="[TÍTULO ARTIGO 4]">
+                    </div>
+                    <div class="artigo-conteudo">
+                        <div class="artigo-meta">
+                            <span class="categoria">Dicas</span>
+                            <span class="data">1 Nov 2025</span>
+                            <span class="tempo-leitura">4 min</span>
+                        </div>
+                        <h3>🇪🇸 Dica para Aprender Espanhol com Mais Facilidade</h3>
+                        <p>Uma forma prática de acelerar o aprendizado do espanhol é incluir o idioma no seu dia a dia:
+                            ouça músicas latinas, assista a séries espanholas com legendas e pratique frases simples em
+                            conversas rápidas. Essa imersão ajuda a ganhar confiança, ampliar o vocabulário e tornar o
+                            estudo mais natural e divertido.</p>
+
+                        <button class="btn-ler-mais">Ler Mais</button>
+                    </div>
+                </article>
+
+                <!-- Artigo 5 -->
+                <article class="artigo-card" data-categoria="novidades">
+                    <div class="artigo-imagem">
+                        <img src="imagens/blog22.jpg" alt="[TÍTULO ARTIGO 5]">
+                    </div>
+                    <div class="artigo-conteudo">
+                        <div class="artigo-meta">
+                            <span class="categoria">Novidades</span>
+                            <span class="data">28 Out 2025</span>
+                            <span class="tempo-leitura">6 min</span>
+                        </div>
+                        <h3>Curso Intensivo de Alemão</h3>
+                        <p>A escola está oferecendo um curso intensivo de alemão com foco em comunicação prática e
+                            cultural. As aulas combinam conversação, escrita e compreensão auditiva, além de explorar
+                            tradições e expressões típicas da Alemanha. É a oportunidade ideal para quem deseja se
+                            preparar para viagens, estudos ou carreiras internacionais.</p>
+
+                        <button class="btn-ler-mais">Ler Mais</button>
+                    </div>
+                </article>
+
+                <!-- Artigo 6 -->
+                <article class="artigo-card" data-categoria="tutoriais">
+                    <div class="artigo-imagem">
+                        <img src="imagens/blog33.jpg" alt="[TÍTULO ARTIGO 6]">
+                    </div>
+                    <div class="artigo-conteudo">
+                        <div class="artigo-meta">
+                            <span class="categoria">Tutoriais</span>
+                            <span class="data">25 Out 2025</span>
+                            <span class="tempo-leitura">8 min</span>
+                        </div>
+                        <h3>Passo a Passo para Melhorar seu Alemão</h3>
+                        <p>Para evoluir no aprendizado de alemão, comece criando uma rotina diária de estudo com pelo
+                            menos 20 minutos de leitura ou prática. Use aplicativos de vocabulário para reforçar
+                            palavras novas, assista a vídeos ou músicas em alemão para treinar a compreensão auditiva e
+                            mantenha um caderno de frases úteis para revisar sempre. Além disso, pratique a conversação
+                            em grupo ou online e escreva pequenos textos semanais para treinar a gramática e a escrita.
+                        </p>
+
+                        <button class="btn-ler-mais">Ler Mais</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Paginação -->
+        <div class="paginacao">
+            <button class="page-btn" data-page="prev">← Anterior</button>
+            <button class="page-btn active" data-page="1">1</button>
+            <button class="page-btn" data-page="2">2</button>
+            <button class="page-btn" data-page="3">3</button>
+            <button class="page-btn" data-page="next">Próximo →</button>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h3>Assine Nossa Newsletter</h3>
+                <p>Receba os melhores artigos diretamente no seu email</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor email" required>
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagens/logo-branco.png" alt="Logo CEEP Idiomas">
+        <p class="copyright">&copy; Copyright CEEP Escola de idiomas - 2025</p>
+    </footer>
+
+    <!-- JavaScript do Blog -->
+    <script>
+        // Filtros do Blog
+        const filtrosBlog = document.querySelectorAll('.filtro-blog');
+        const artigos = document.querySelectorAll('.artigo-card, .artigo-destaque');
+
+        filtrosBlog.forEach(btn => {
+            btn.addEventListener('click', function () {
+                filtrosBlog.forEach(f => f.classList.remove('ativo'));
+                this.classList.add('ativo');
+
+                const categoria = this.getAttribute('data-categoria');
+
+                artigos.forEach(artigo => {
+                    if (categoria === 'todas' || artigo.getAttribute('data-categoria') === categoria) {
+                        artigo.style.display = 'block';
+                        artigo.style.animation = 'fadeIn 0.5s';
+                    } else {
+                        artigo.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Pesquisa
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.querySelector('.search-btn');
+
+        function pesquisarArtigos() {
+            const termo = searchInput.value.toLowerCase();
+
+            artigos.forEach(artigo => {
+                const titulo = artigo.querySelector('h2, h3').textContent.toLowerCase();
+                const resumo = artigo.querySelector('p').textContent.toLowerCase();
+
+                if (titulo.includes(termo) || resumo.includes(termo) || termo === '') {
+                    artigo.style.display = 'block';
+                } else {
+                    artigo.style.display = 'none';
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', pesquisarArtigos);
+        searchBtn.addEventListener('click', pesquisarArtigos);
+
+        // Paginação
+        const pageBtns = document.querySelectorAll('.page-btn');
+
+        pageBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                if (!this.classList.contains('active')) {
+                    pageBtns.forEach(p => p.classList.remove('active'));
+                    if (this.getAttribute('data-page') !== 'prev' && this.getAttribute('data-page') !== 'next') {
+                        this.classList.add('active');
+                    }
+
+                    // Simula carregamento de nova página
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Newsletter
+        const newsletterForm = document.querySelector('.newsletter-form');
+        newsletterForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = this.querySelector('input').value;
+            alert('Obrigado! Email ' + email + ' cadastrado com sucesso!');
+            this.reset();
+        });
+
+        // Animação de entrada
+        const observador = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideInUp 0.6s ease forwards';
+                }
+            });
+        });
+
+        document.querySelectorAll('.artigo-card').forEach(card => {
+            observador.observe(card);
+        });
+    </script>
+</body>
+
+</html>
