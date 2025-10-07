@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEEP escola de idiomas - Mapa</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="dark-mode.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+        #map {
+            width: 100%;
+            height: 500px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1 class="titulo-principal">CEEP ESCOLA DE IDIOMAS</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="principal">
+        <h2 class="titulo-centralizado">Onde estamos localizados</h2>
+        <p>Venha nos visitar! Nossa escola está localizada em Cascavel/PR, em uma região de fácil acesso.</p>
+
+        <div id="map"></div>
+    </div>
+
+    <footer>
+        <p>© 2025 CEEP Idiomas - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="dark-mode.js"></script>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Coordenadas aproximadas de Cascavel/PR
+        const lat = -24.945937321003502;
+        const lng = -53.483513567762046;
+
+        // Inicializa o mapa
+        const map = L.map('map').setView([lat, lng], 15);
+
+        // Camada do OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Marcador com popup
+        L.marker([lat, lng]).addTo(map)
+            .bindPopup("<b>CEEP Escola de Idiomas</b><br>Rua Natal, 2800 - Bairro Tropical, Cascavel - PRCascavel/PR")
+            .openPopup();
+    </script>
+</body>
+
+</html>
