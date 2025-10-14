@@ -1,4 +1,4 @@
-/* ESTILOS ESPECÍFICOS DA PÁGINA INICIAL */
+/* ESTILOS ESPECÍFICOS DA PÁGINA INICIAL index.html */
 
 /* Reset específico para melhor controle */
 body {
@@ -495,21 +495,7 @@ nav a:active {
         margin-bottom: 20px;
     }
 
-    .copyright {
-        color: #ffffff;
-        font-size: 14px;
-        margin: 0;
-    }
 
-    footer a {
-        color: #ffdd57;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    footer a:hover {
-        text-decoration: underline;
-    }
 
     .faq-section {
         background: #f4f4f4;

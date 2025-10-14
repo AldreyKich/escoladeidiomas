@@ -69,6 +69,12 @@ header h1 img {
 }
 
 /* === NAVEGAÇÃO === */
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
 nav ul {
   display: flex;
   gap: 30px;
@@ -80,7 +86,7 @@ nav li {
 
 nav a {
   text-transform: uppercase;
-  color: #ffffff;
+  color: #0b0909;
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
@@ -96,6 +102,14 @@ nav a:hover {
 
 nav a:active {
   background: rgba(255, 255, 255, 0.3);
+}
+
+.titulo-principal {
+  font-size: 2em;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* === CONTEÚDO PRINCIPAL === */
@@ -206,11 +220,8 @@ footer img {
   margin-bottom: 20px;
 }
 
-.copyright {
-  color: #ffffff;
-  font-size: 14px;
-  margin: 0;
-}
+
+
 
 /* === RESPONSIVIDADE === */
 @media (max-width: 940px) {
